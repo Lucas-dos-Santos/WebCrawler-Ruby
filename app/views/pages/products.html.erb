@@ -1,0 +1,19 @@
+<h1 class="text-center">Produtos da promoção relampago mercado livre</h1>
+<div class ='text-center'>
+  <%= link_to 'Atualizar Produtos', crawler_path, class: 'btn btn-info' %>
+</div>
+<div class="container d-flex flex-wrap">
+  <% @products.each do |product| %>
+    <div class="card mx-auto my-4" style="width: 18rem;">
+      <img class="card-img-top" src=<%= product.thumb_image %> alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">
+          <%= product.name %>
+          <%= product.content %>
+        </p>
+        <a href=<%= product.link %> class="mx-3">Link</a>
+        <%= product.origin %>
+      </div>
+    </div>
+  <% end %>
+</div>

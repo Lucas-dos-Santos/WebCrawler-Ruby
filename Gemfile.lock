@@ -98,6 +98,7 @@ GEM
       stringio
       time
       uri
+    pg (1.2.3)
     puma (5.5.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -194,6 +195,7 @@ DEPENDENCIES
   listen (~> 3.3)
   nokogiri
   open-uri
+  pg (~> 1.2)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
